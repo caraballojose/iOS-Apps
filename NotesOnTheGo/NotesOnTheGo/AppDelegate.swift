@@ -7,7 +7,6 @@
 
 import UIKit
 import CoreData
-import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,10 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
-    
+        UINavigationBar.appearance().prefersLargeTitles = true
         
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            NSAttributedString.Key.foregroundColor : UIColor.white,
+            NSAttributedString.Key.font : UIFont(name: "Avenir Next", size: 24.0) ?? UIFont.systemFont(ofSize: 24.0)
+        ]
+        
+        print("Aplicación lanzada")
         return true
+       
     }
 
     // MARK: UISceneSession Lifecycle

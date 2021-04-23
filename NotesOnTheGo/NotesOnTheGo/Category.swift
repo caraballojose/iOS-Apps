@@ -6,17 +6,6 @@
 //
 import UIKit
 import Foundation
-import RealmSwift
-
-class Category: Object {
-    
-    @objc var colorHex : String?
-    @objc var image : Data?
-    @objc var title : String?
-    
-    let notes = List<Note>()
-    
-}
 
 extension Category {
     

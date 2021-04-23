@@ -19,8 +19,8 @@
 		AE79552625FC1AE100EC851B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79552525FC1AE100EC851B /* Extensions.swift */; };
 		AE7CC00625FD55C000A39016 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7CC00525FD55C000A39016 /* Category.swift */; };
 		AE7CC00A25FD6B4200A39016 /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7CC00925FD6B4200A39016 /* NewCategoryViewController.swift */; };
+		AE8D28D12633850B00F06256 /* NotesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE8D28CF2633850B00F06256 /* NotesDataModel.xcdatamodeld */; };
 		AE917B0825E81FD700274F97 /* CategoryViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE917B0725E81FD700274F97 /* CategoryViewControllerCollectionViewCell.swift */; };
-		AE9669F6260E8988000DC6E4 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9669F5260E8988000DC6E4 /* Note.swift */; };
 		AE9FBB4F25F44BA6005B9C2D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9FBB4D25F44BA6005B9C2D /* CustomTableViewCell.swift */; };
 		AE9FBB5025F44BA6005B9C2D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9FBB4E25F44BA6005B9C2D /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -38,8 +38,8 @@
 		AE79552525FC1AE100EC851B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AE7CC00525FD55C000A39016 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		AE7CC00925FD6B4200A39016 /* NewCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
+		AE8D28D02633850B00F06256 /* NotesDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesDataModel.xcdatamodel; sourceTree = "<group>"; };
 		AE917B0725E81FD700274F97 /* CategoryViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
-		AE9669F5260E8988000DC6E4 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		AE9FBB4D25F44BA6005B9C2D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		AE9FBB4E25F44BA6005B9C2D /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,8 +89,8 @@
 				AE9FBB4D25F44BA6005B9C2D /* CustomTableViewCell.swift */,
 				AE9FBB4E25F44BA6005B9C2D /* CustomTableViewCell.xib */,
 				AE79552525FC1AE100EC851B /* Extensions.swift */,
+				AE8D28CF2633850B00F06256 /* NotesDataModel.xcdatamodeld */,
 				AE7CC00525FD55C000A39016 /* Category.swift */,
-				AE9669F5260E8988000DC6E4 /* Note.swift */,
 			);
 			path = NotesOnTheGo;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 				AE917B0825E81FD700274F97 /* CategoryViewControllerCollectionViewCell.swift in Sources */,
 				AE7CC00625FD55C000A39016 /* Category.swift in Sources */,
 				AE0D015825E567760022F2AD /* AppDelegate.swift in Sources */,
-				AE9669F6260E8988000DC6E4 /* Note.swift in Sources */,
+				AE8D28D12633850B00F06256 /* NotesDataModel.xcdatamodeld in Sources */,
 				AE7CC00A25FD6B4200A39016 /* NewCategoryViewController.swift in Sources */,
 				AE0D015A25E567760022F2AD /* SceneDelegate.swift in Sources */,
 			);
@@ -406,6 +406,20 @@
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		AE8D28CF2633850B00F06256 /* NotesDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE8D28D02633850B00F06256 /* NotesDataModel.xcdatamodel */,
+			);
+			currentVersion = AE8D28D02633850B00F06256 /* NotesDataModel.xcdatamodel */;
+			name = NotesDataModel.xcdatamodeld;
+			path = "../../../../../../Downloads/ios-12-master/11-NotesOnTheGo/11-NotesOnTheGo/Model/NotesDataModel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AE0D014C25E567760022F2AD /* Project object */;
 }

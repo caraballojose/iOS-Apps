@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import RealmSwift
+import CoreData
 
 
 class NotesTableViewController: UITableViewController {
@@ -15,13 +15,12 @@ class NotesTableViewController: UITableViewController {
     
     var selectedCategory : Category?{
         didSet{
-            //loadNote()
+            loadNote()
         }
     }
     
-    var userDefaults = UserDefaults.standard
-    
-    let realm = try! Realm()
+    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Notes.plist")
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +35,7 @@ class NotesTableViewController: UITableViewController {
         }
         */
         self.navigationItem.title = selectedCategory?.title
-        //loadNote()
+        loadNote()
     }
     
     
@@ -114,9 +113,9 @@ class NotesTableViewController: UITableViewController {
         
         let addAction = UIAlertAction(title: "Agregar Item", style: .default) { (action) in
            
-            let note = Note()
+            let note = Note(context: self.context)
             note.title = textField.text!
-            //note.parentCategory = self.selectedCategory
+            note.parentCategory = self.selectedCategory
             self.notesArray.append(note)
             
         //self.notesArray.append(textField.text!)
@@ -141,17 +140,17 @@ class NotesTableViewController: UITableViewController {
     }
     
     func persistantNotes() {
-       /*
+       
         do{
             try context.save()
         }catch{
             print("Error al guardar el contexto \(error)")
         }
         
-        self.tableView.reloadData()*/
+        self.tableView.reloadData()
     }
     
-  /*  func loadNote(from request: NSFetchRequest<Note> = Note.fetchRequest(), predicate : NSPredicate? = nil) {
+    func loadNote(from request: NSFetchRequest<Note> = Note.fetchRequest(), predicate : NSPredicate? = nil) {
         
      
         let catPredicate = NSPredicate(format: "parentCategory.title MATCHES %@", selectedCategory!.title!)
@@ -171,7 +170,7 @@ class NotesTableViewController: UITableViewController {
         }
         
         tableView.reloadData()
-    }*/
+    }
     
 }
 
@@ -179,7 +178,7 @@ extension NotesTableViewController : UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
        
-      /*  let searchText = searchBar.text!
+       let searchText = searchBar.text!
         
         let request : NSFetchRequest<Note> = Note.fetchRequest()
         
@@ -189,17 +188,17 @@ extension NotesTableViewController : UISearchBarDelegate {
         let sortDescription = NSSortDescriptor(key: "title", ascending: true)
         request.sortDescriptors = [sortDescription]
         
-        loadNote(from: request, predicate: predicate)*/
+        loadNote(from: request, predicate: predicate)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        /*
+        
         if searchBar.text?.count == 0 {
             loadNote()
             DispatchQueue.main.async {
                 searchBar.resignFirstResponder()
             }
-        }*/
+        }
     }
 }
 

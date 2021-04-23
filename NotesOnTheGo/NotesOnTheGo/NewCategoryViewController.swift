@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import RealmSwift
+import CoreData
 
 class NewCategoryViewController: UIViewController {
 
@@ -22,7 +22,7 @@ class NewCategoryViewController: UIViewController {
     
     var backColor = UIColor()
     
-    let realm = try! Realm()
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,21 +66,16 @@ class NewCategoryViewController: UIViewController {
     
     @IBAction func savePressed(_ sender: UIButton) {
         
-        let category = Category()
+        let category = Category(context: context)
         category.title = textField.text!
         category.colorHex = backColor.toHex
         category.image = imageView.image?.pngData()
         
-        do {
-            
-            try realm.write {
-                realm.add(category)
-            }
-            
-        } catch {
-            print("Error al guardar categoria \(error)")
+        do{
+            try context.save()
+        }catch {
+            print("Error al guardar la categoría en CD")
         }
-        
         dismiss(animated: true, completion: nil)
         
     }
