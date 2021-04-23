@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D64" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName=".Category" syncable="YES" codeGenerationType="class">
+        <attribute name="colorHex" attributeType="String"/>
+        <attribute name="image" attributeType="Binary"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="parentCategory" inverseEntity="Note"/>
+    </entity>
+    <entity name="Note" representedClassName=".Note" syncable="YES" codeGenerationType="class">
+        <attribute name="checked" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="parentCategory" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="notes" inverseEntity="Category"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="298.3706665039062" positionY="2788.543029785156" width="128" height="103"/>
+        <element name="Note" positionX="535.3446655273438" positionY="2773.353912353516" width="128" height="88"/>
+    </elements>
+</model>

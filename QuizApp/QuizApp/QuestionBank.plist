@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>questions</key>
+	<array>
+		<dict>
+			<key>question</key>
+			<string>El Vaticano tiene la cantidad de dinero sufiente para acabar con la probeza del mundo, dos veces.</string>
+			<key>answer</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>El caballito de mar es el ser vivo mas fiel que existe, cuando muere su pareja tambien lo hace el otro al poco tiempo.</string>
+			<key>answer</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Los Humanos son los unicos seres vivos que practican sexo por placer</string>
+			<key>answer</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>La semilla de la manzana contiene cianuro y es tóxica</string>
+			<key>answer</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Se puede afeitar el bigote a un gato sin ningun problema</string>
+			<key>answer</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Un koala necesita beber agua al menos una vez al día</string>
+			<key>answer</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>T. Edinson, el inventor de la bombilla le tenía miedo a la oscuridad</string>
+			<key>answer</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Escorpiones son los unicos animales que se suicidan cuando no pueden escapar de una situcion de peligro</string>
+			<key>answer</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Los ojos de un hamster se pueden caer si se le cuelga cabeza abajo</string>
+			<key>answer</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Si divides el numero de abejas hembras entre el número de abejas macho de un panal, se obtiene el número de oro</string>
+			<key>answer</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Las palmeras nacieron por primer vez en el polo norte</string>
+			<key>answer</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Cervantes y Shakespeare, murieron el mismo día</string>
+			<key>answer</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

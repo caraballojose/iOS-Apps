@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3ec-tN-eyU">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Hpb-8C-aOC">
+            <objects>
+                <collectionViewController id="3ec-tN-eyU" customClass="ViewController" customModule="WebScrapping" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" id="ccN-lD-8mR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="12" id="4ZY-Tl-ZYu">
+                            <size key="itemSize" width="200" height="260"/>
+                            <size key="estimatedItemSize" width="200" height="260"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="16" minY="24" maxX="16" maxY="16"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SongCell" id="DpB-As-Ba8" customClass="SongCell" customModule="WebScrapping" customModuleProvider="target">
+                                <rect key="frame" x="95" y="24" width="200" height="260"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="99q-1d-mSn">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="260"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8tG-c5-Zad">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="202.33333333333334"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ust-ph-iQf">
+                                            <rect key="frame" x="0.0" y="201" width="200" height="59"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ust-ph-iQf" secondAttribute="height" multiplier="200:59" id="iaf-0o-jUf"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="ust-ph-iQf" secondAttribute="bottom" id="3CL-gn-c7v"/>
+                                        <constraint firstItem="8tG-c5-Zad" firstAttribute="top" secondItem="99q-1d-mSn" secondAttribute="top" id="Ahf-m9-EPh"/>
+                                        <constraint firstItem="8tG-c5-Zad" firstAttribute="centerX" secondItem="99q-1d-mSn" secondAttribute="centerX" id="BPj-tE-jp5"/>
+                                        <constraint firstAttribute="bottom" secondItem="8tG-c5-Zad" secondAttribute="bottom" constant="57.670000000000002" id="U5C-Nk-8q7"/>
+                                        <constraint firstAttribute="trailing" secondItem="8tG-c5-Zad" secondAttribute="trailing" id="Ul7-FF-ys8"/>
+                                        <constraint firstItem="ust-ph-iQf" firstAttribute="leading" secondItem="99q-1d-mSn" secondAttribute="leading" id="Wbc-Zb-AK9"/>
+                                        <constraint firstItem="ust-ph-iQf" firstAttribute="top" secondItem="99q-1d-mSn" secondAttribute="top" constant="201" id="egk-Fd-S76"/>
+                                        <constraint firstItem="8tG-c5-Zad" firstAttribute="top" secondItem="99q-1d-mSn" secondAttribute="top" id="oTk-kj-I2Q"/>
+                                        <constraint firstAttribute="trailing" secondItem="ust-ph-iQf" secondAttribute="trailing" id="prq-ea-o90"/>
+                                        <constraint firstItem="8tG-c5-Zad" firstAttribute="leading" secondItem="99q-1d-mSn" secondAttribute="leading" id="qfJ-Zg-sKx"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="200" height="260"/>
+                                <connections>
+                                    <outlet property="imageViewSong" destination="8tG-c5-Zad" id="Om4-po-B2r"/>
+                                    <outlet property="labelSong" destination="ust-ph-iQf" id="Ug2-qX-97p"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="3ec-tN-eyU" id="ERv-8o-OE9"/>
+                            <outlet property="delegate" destination="3ec-tN-eyU" id="i5G-0e-Mn8"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WpB-vL-Nd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126.15384615384615" y="0.7109004739336493"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

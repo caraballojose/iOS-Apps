@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EF8C9C41-AFC8-4C88-83AE-C3CA2D7ED4B4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0143D47E-12C8-46C1-82F1-7DAB5C8A4669"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coding/FontDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "0143D47E-12C8-46C1-82F1-7DAB5C8A4669 - 13dd78ef6c6c84ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coding.FontDetailViewController.LabelTittle.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Coding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josecaraballo/Developer/Projects/Xcode/Coding/Coding/FontDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "0143D47E-12C8-46C1-82F1-7DAB5C8A4669 - 35ff67f6d99ed8f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coding.FontDetailViewController.LabelTittle.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Coding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josecaraballo/Developer/Projects/Xcode/Coding/Coding/FontDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "0143D47E-12C8-46C1-82F1-7DAB5C8A4669 - 23e96377a92bde4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coding.FontDetailViewController.LabelTittle.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Coding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josecaraballo/Developer/Projects/Xcode/Coding/Coding/FontDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "0143D47E-12C8-46C1-82F1-7DAB5C8A4669 - 1ca7900534142477"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coding.FontDetailViewController.LabelTittle.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Coding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josecaraballo/Developer/Projects/Xcode/Coding/Coding/FontDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "0143D47E-12C8-46C1-82F1-7DAB5C8A4669 - 4bf08a320886d598"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coding.FontDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Coding.FontDetailViewController"
+                  moduleName = "Coding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josecaraballo/Developer/Projects/Xcode/Coding/Coding/FontDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "0143D47E-12C8-46C1-82F1-7DAB5C8A4669 - 13b6a50a20941d87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coding.FontDetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Coding.FontDetailViewController&gt;"
+                  moduleName = "Coding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josecaraballo/Developer/Projects/Xcode/Coding/Coding/FontDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B559A7B1-1DED-4FE5-BA05-8D1172CD128D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coding/FontDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
