@@ -31,9 +31,9 @@ class CategoriesViewController: UICollectionViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         print("Hola soy Did appear")
-        collectionView.reloadData()
+        loadCategories()
     }
-
+/*
     override func viewWillAppear(_ animated: Bool) {
         let request: NSFetchRequest<Category> = Category.fetchRequest()
         
@@ -46,7 +46,7 @@ class CategoriesViewController: UICollectionViewController {
         }
         collectionView.reloadData()
     }
-    
+   */
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
