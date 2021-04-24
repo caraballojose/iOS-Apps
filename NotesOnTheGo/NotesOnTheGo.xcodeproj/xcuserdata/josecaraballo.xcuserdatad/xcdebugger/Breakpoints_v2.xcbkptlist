@@ -78,8 +78,8 @@
             filePath = "NotesOnTheGo/CategoriesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "loadCategories()"
             landmarkType = "7">
          </BreakpointContent>

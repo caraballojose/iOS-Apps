@@ -72,9 +72,8 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZSp-DI-01f">
                             <color key="tintColor" systemColor="linkColor"/>
                             <connections>
-                                <segue destination="dCj-rq-ztx" kind="popoverPresentation" identifier="addCategory" popoverAnchorBarButtonItem="ZSp-DI-01f" id="kBR-PC-t9u">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <action selector="newCategoryButton:" destination="kQ9-LT-daQ" id="ILn-Ky-3N9"/>
+                                <segue destination="dCj-rq-ztx" kind="show" identifier="addCategory" id="Var-v9-l0b"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -88,17 +87,17 @@
             <objects>
                 <viewController id="dCj-rq-ztx" customClass="NewCategoryViewController" customModule="NotesOnTheGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5KK-LA-wIQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camara-icon" translatesAutoresizingMaskIntoConstraints="NO" id="I73-F3-EQ4">
-                                <rect key="frame" x="70" y="30" width="274" height="274"/>
+                                <rect key="frame" x="70" y="118" width="274" height="274"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="I73-F3-EQ4" secondAttribute="height" multiplier="1:1" id="len-ki-Mi5"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de la categoria" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4k4-ei-hi8">
-                                <rect key="frame" x="24" y="312" width="366" height="34"/>
+                                <rect key="frame" x="24" y="400" width="366" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="csr-JT-kFD"/>
                                 </constraints>
@@ -109,7 +108,7 @@
                                 </connections>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zaT-2p-PyI">
-                                <rect key="frame" x="30" y="354" width="354" height="144"/>
+                                <rect key="frame" x="30" y="442" width="354" height="144"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="O6N-EH-cgj">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
@@ -186,7 +185,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="SUd-5E-jTC">
-                                <rect key="frame" x="40" y="558" width="334" height="45"/>
+                                <rect key="frame" x="40" y="646" width="334" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAv-Rb-1ye">
                                         <rect key="frame" x="0.0" y="0.0" width="147" height="45"/>

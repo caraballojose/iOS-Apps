@@ -28,25 +28,18 @@ class CategoriesViewController: UICollectionViewController {
         
         
     }
-    
+    @IBAction func newCategoryButton(_ sender: UIBarButtonItem) {
+        /*
+        let newCategoryVC = NewCategoryViewController()
+        performSegue(withIdentifier: "add", sender: <#T##Any?#>)
+        */
+    }
+   
     override func viewDidAppear(_ animated: Bool) {
         print("Hola soy Did appear")
         loadCategories()
     }
-/*
-    override func viewWillAppear(_ animated: Bool) {
-        let request: NSFetchRequest<Category> = Category.fetchRequest()
-        
-        let sortDescription = NSSortDescriptor(key: "title", ascending: true)
-        request.sortDescriptors = [sortDescription]
-        do{
-            try categoriesArray = context.fetch(request)
-        } catch {
-            print("Error al recuperar las categorías \(error)")
-        }
-        collectionView.reloadData()
-    }
-   */
+   
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }

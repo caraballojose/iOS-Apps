@@ -26,13 +26,13 @@ class NewCategoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
         
         //como Imageview no puede invocar Action, a;adinos un gesture recognizer
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-        imageView.isUserInteractionEnabled = true
-        imageView.addGestureRecognizer(tapGestureRecognizer)
+       self.imageView.isUserInteractionEnabled = true
+       self.imageView.addGestureRecognizer(tapGestureRecognizer)
         
         repaintBackground()
         
@@ -76,13 +76,19 @@ class NewCategoryViewController: UIViewController {
         }catch {
             print("Error al guardar la categoría en CD")
         }
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion : {
+            self.navigationController?.navigationBar.isHidden = false
+            self.navigationController?.popViewController(animated: true)
+        })
         
     }
     
     @IBAction func cancelPressed(_ sender: UIButton) {
         
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion : {
+            self.navigationController?.navigationBar.isHidden = false
+            self.navigationController?.popViewController(animated: true)
+        })
     }
     
     @objc func imageTapped() {
