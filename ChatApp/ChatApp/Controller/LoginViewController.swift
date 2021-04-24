@@ -107,6 +107,7 @@ class LoginViewController: UIViewController {
             
             if error != nil {
                 self.callAlert(title: "Error al intentar ingresar", msg: error!.localizedDescription, act: false)
+                ProgressHUD.dismiss()
             } else {
                 print("Usuario logeado")
                 ProgressHUD.dismiss()

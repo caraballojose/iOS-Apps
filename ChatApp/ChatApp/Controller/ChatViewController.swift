@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import ProgressHUD
 
 class ChatViewController: UIViewController {
     
@@ -60,7 +61,7 @@ class ChatViewController: UIViewController {
         self.tableMsg.dataSource =  self
         
         self.tableMsg.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "MessageCell")
-        
+        self.tableMsg.separatorStyle = .none
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(messageTableViewTapped))
         self.tableMsg.addGestureRecognizer(tapGesture)
         
@@ -78,7 +79,7 @@ class ChatViewController: UIViewController {
 
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .plain, target: self, action: #selector(logOut))
-        
+        navigationItem.setHidesBackButton(true, animated: true)
         boxChat.addSubview(tableMsg)
         tableMsg.anchor(top: boxChat.topAnchor, left: boxChat.leftAnchor, bottom: boxChat.bottomAnchor, right: boxChat.rightAnchor)
         view.addSubview(boxChat)
@@ -99,6 +100,7 @@ class ChatViewController: UIViewController {
     //MARK: - Firebase
     
     func retrieveMessageFromFirebase() {
+        
         let messageDB = Database.database().reference().child("Messages")
         messageDB.observe(.childAdded) { (snapshot) in
             let snapshotValue = snapshot.value as! Dictionary<String,String>
@@ -110,6 +112,7 @@ class ChatViewController: UIViewController {
             self.configureTableView()
             self.tableMsg.reloadData()
         }
+        
     }
     
     //MARK: -  Actions
@@ -170,10 +173,21 @@ extension ChatViewController : UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! MessageCell
         
         cell.usernameLabel.text = messagesArray[indexPath.row].sender
         cell.messageLabel.text = messagesArray[indexPath.row].body
+        cell.messageImageView.image = #imageLiteral(resourceName: "wargreymon")
+        
+        if cell.usernameLabel.text == Auth.auth().currentUser?.email {
+            cell.messageImageView.backgroundColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
+            cell.messageBackground.backgroundColor = #colorLiteral(red: 0.4464960516, green: 0.7004465783, blue: 1, alpha: 1)
+        } else {
+            cell.messageImageView.backgroundColor = #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)
+            cell.messageBackground.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        }
+        
         return cell
     }
     
