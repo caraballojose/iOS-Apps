@@ -47,6 +47,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE2228FD2637283E00E7E5E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE540B8E25C8CB7D0093628D /* AppDelegate.swift */,
+				AE540B9225C8CB7D0093628D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE2228FE2637284400E7E5E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE540B9925C8CB7F0093628D /* LaunchScreen.storyboard */,
+				AE540B9425C8CB7D0093628D /* Main.storyboard */,
+				AE7F892E25C9A4C6000F7A1B /* Extensions.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE2228FF2637284900E7E5E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE93617C25CC501F007D5F28 /* QuestionFarmer.swift */,
+				AE93617925CC4D93007D5F28 /* Question.swift */,
+				AE93617F25CCB001007D5F28 /* QuestionBank.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE222900263728EC00E7E5E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE540B9725C8CB7F0093628D /* Assets.xcassets */,
+				AE7BA40B25CD8FAE005E877F /* ProgressHUD.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AE540B8225C8CB7D0093628D = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +104,12 @@
 		AE540B8D25C8CB7D0093628D /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				AE7F892E25C9A4C6000F7A1B /* Extensions.swift */,
-				AE540B8E25C8CB7D0093628D /* AppDelegate.swift */,
+				AE222900263728EC00E7E5E1 /* Supporting Files */,
+				AE2228FF2637284900E7E5E1 /* Model */,
+				AE2228FE2637284400E7E5E1 /* View */,
+				AE2228FD2637283E00E7E5E1 /* Controller */,
 				AE540B9025C8CB7D0093628D /* SceneDelegate.swift */,
-				AE540B9225C8CB7D0093628D /* ViewController.swift */,
-				AE540B9425C8CB7D0093628D /* Main.storyboard */,
-				AE540B9725C8CB7F0093628D /* Assets.xcassets */,
-				AE540B9925C8CB7F0093628D /* LaunchScreen.storyboard */,
 				AE540B9C25C8CB7F0093628D /* Info.plist */,
-				AE93617925CC4D93007D5F28 /* Question.swift */,
-				AE93617C25CC501F007D5F28 /* QuestionFarmer.swift */,
-				AE93617F25CCB001007D5F28 /* QuestionBank.plist */,
-				AE7BA40B25CD8FAE005E877F /* ProgressHUD.swift */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
