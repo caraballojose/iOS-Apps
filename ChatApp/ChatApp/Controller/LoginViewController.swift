@@ -102,7 +102,6 @@ class LoginViewController: UIViewController {
         }
     
         ProgressHUD.show()
-        
         Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
             
             if error != nil {
