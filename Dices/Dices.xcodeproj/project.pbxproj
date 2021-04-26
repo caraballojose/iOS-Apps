@@ -56,15 +56,39 @@
 		AE8137F725C0657600D92CFB /* Dices */ = {
 			isa = PBXGroup;
 			children = (
+				AE92CE2C26371B0300076B5D /* Model */,
+				AE92CE2B26371AFE00076B5D /* View */,
+				AE92CE2A26371AF500076B5D /* Controller */,
 				AE8137F825C0657600D92CFB /* AppDelegate.swift */,
 				AE8137FA25C0657600D92CFB /* SceneDelegate.swift */,
-				AE8137FC25C0657600D92CFB /* ViewController.swift */,
-				AE8137FE25C0657600D92CFB /* Main.storyboard */,
 				AE81380125C0657700D92CFB /* Assets.xcassets */,
-				AE81380325C0657700D92CFB /* LaunchScreen.storyboard */,
 				AE81380625C0657700D92CFB /* Info.plist */,
 			);
 			path = Dices;
+			sourceTree = "<group>";
+		};
+		AE92CE2A26371AF500076B5D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE8137FC25C0657600D92CFB /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE92CE2B26371AFE00076B5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE81380325C0657700D92CFB /* LaunchScreen.storyboard */,
+				AE8137FE25C0657600D92CFB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE92CE2C26371B0300076B5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

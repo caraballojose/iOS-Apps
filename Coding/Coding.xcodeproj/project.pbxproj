@@ -43,6 +43,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE92CE2426371A1F00076B5D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE97A74025C34F0400C1A975 /* FirstViewController.swift */,
+				AE97A74325C34F2300C1A975 /* SecondViewController.swift */,
+				AE97A74625C3500400C1A975 /* ThirdViewController.swift */,
+				AE53B0CE25C756C5007DBFB7 /* FontDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE92CE2526371A2800076B5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE97A73125C3404300C1A975 /* Main.storyboard */,
+				AE97A73625C3404500C1A975 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE92CE2626371A2E00076B5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AE97A71F25C3404300C1A975 = {
 			isa = PBXGroup;
 			children = (
@@ -62,15 +89,12 @@
 		AE97A72A25C3404300C1A975 /* Coding */ = {
 			isa = PBXGroup;
 			children = (
+				AE92CE2626371A2E00076B5D /* Model */,
+				AE92CE2526371A2800076B5D /* View */,
+				AE92CE2426371A1F00076B5D /* Controller */,
 				AE97A72B25C3404300C1A975 /* AppDelegate.swift */,
 				AE97A72D25C3404300C1A975 /* SceneDelegate.swift */,
-				AE97A74025C34F0400C1A975 /* FirstViewController.swift */,
-				AE97A74325C34F2300C1A975 /* SecondViewController.swift */,
-				AE97A74625C3500400C1A975 /* ThirdViewController.swift */,
-				AE53B0CE25C756C5007DBFB7 /* FontDetailViewController.swift */,
-				AE97A73125C3404300C1A975 /* Main.storyboard */,
 				AE97A73425C3404500C1A975 /* Assets.xcassets */,
-				AE97A73625C3404500C1A975 /* LaunchScreen.storyboard */,
 				AE97A73925C3404500C1A975 /* Info.plist */,
 			);
 			path = Coding;
