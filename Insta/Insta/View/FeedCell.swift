@@ -9,6 +9,12 @@ import UIKit
 
 class FeedCell: UICollectionViewCell {
     
+    let button = UIButton(type: .system, primaryAction:UIAction(title: "Button", handler: { action in
+        print("Hola")
+        return
+    }) )
+    
+    
     private let profileImageView : UIImageView = {
         
         let iv = UIImageView()
@@ -22,11 +28,15 @@ class FeedCell: UICollectionViewCell {
     
     private lazy var usernameButton: UIButton = {
         
-        let button = UIButton(type: .system)
+        let button = UIButton(type: .system, primaryAction:UIAction(title: "Button", handler: { action in
+            print("Hola")
+            return
+        }) )
         button.setTitleColor(.black, for: .normal)
         button.setTitle("Venom", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
-        button.addTarget(self, action: #selector(didTapUsername), for: .touchUpInside)
+        //button.addTarget(self, action: #selector(didTapUsername), for: .touchUpInside)
+        
         return button
         
     }()

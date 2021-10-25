@@ -33,16 +33,20 @@ class LoginController: UIViewController {
         return tf
     }()
     
-    private let loginButton : UIButton = {
-            
-        let bt = UIButton()
+    private lazy var loginButton : UIButton = {
+    
+        let bt = UIButton(type: .system, primaryAction:UIAction(title: "Button", handler: {[weak self] (action) in
+            guard let view = self?.showText() else {return}
+            self?.present(view, animated: true, completion: nil)
+            return
+        }) )
         bt.setTitle("Log In", for: .normal)
         bt.setTitleColor(.white, for: .normal)
         bt.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.5)
         bt.layer.cornerRadius = 5
         bt.setHeight(50)
         bt.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        bt.isEnabled = false
+        //bt.isEnabled = false
         return bt
     }()
     
@@ -119,6 +123,16 @@ class LoginController: UIViewController {
         emailTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
 
+    }
+    
+    func showText() -> UIViewController {
+        let vc = UIViewController()
+        vc.view.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        vc.view.backgroundColor = .red
+        let nav = UINavigationController(rootViewController: vc )
+        vc.navigationItem.title = "VISTA NUEVA"
+        
+        return nav
     }
     
 }
